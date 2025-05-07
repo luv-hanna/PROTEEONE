@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTEEONE</title>
+    <link rel="stylesheet" href="lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+
+    <script>
+        $(function () {
+            var swiper = new Swiper(".mainSwiper", {
+                spaceBetween: 0,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 6000,
+                    disableOnInteraction: false,
+                },
+            });
+
+            var swiper = new Swiper(".section_01_Swiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    "@0.75": {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    "@1.50": {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <id id="wrap">
+
+        <banner class="banner">
+            <div class="banner">
+                <p>프로티원 멤버십 라운지 가입하고 다양한 <strong>전용 혜택과 이벤트</strong>를 즐겨보세요!</p>
+            </div><!-- .banner end -->
+            <button type="button" class="link_close">
+                <img src="img/close_btn.png" alt="배너 닫기">
+            </button><!-- header--link--close -->
+        </banner><!-- .banner end -->
+
+        <header class="header">
+            <div class="inner">
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="">전체 상품</a></li>
+                        <li><a href="">단백질 쉐이크</a></li>
+                        <li><a href="">단백질 스프</a></li>
+                        <li><a href="">BPA FREE 보틀</a></li>
+                    </ul><!-- .gnb end -->
+                </nav><!-- .nav end -->
+
+                <logo class="logo">
+                    <a href="#">
+                        <img src="img/네이버_스마트스토어_기본로고_1200x80.png" alt="">
+                    </a>
+                </logo><!-- .logo end -->
+
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href=""><img src="img/돋보기.png" alt=""></a></li>
+                        <li><a href=""><img src="img/마이페이지.png" alt=""></a></li>
+                        <li><a href=""><img src="img/장바구니.png" alt=""></a></li>
+                    </ul><!-- .gnb end -->
+                </nav><!-- .nav end -->
+            </div><!-- .inner -->
+        </header><!-- .header end -->
+
+        <main class="main">
+            <section class="main_visual">
+                <!-- Swiper -->
+                <div class="swiper mainSwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_덕용_pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_덕용_딸기맛_pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_덕용_커피맛_pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_덕용,파우치_곡물맛_pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_덕용,파우치_녹차맛pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_덕용,파우치_초코맛_pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_덕용,파우치_흑임자맛pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250102_네이버_스마트스토어_롤링배너_파우치_pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                        <div class="swiper-slide">
+                            <img src="img/250301_네이버_스마트스토어_롤링배너_단백질스프_pc.png" alt="">
+                        </div><!-- .swiper-slide end -->
+
+                    </div><!-- swiper-wrapper end -->
+                </div><!-- .swiper mySwiper end -->
+            </section><!-- .main_visual end -->
+        </main><!-- .main end -->
+
+        <section class="section_01">
+            <div class="inner">
+                <div class="title">
+                    <h2>Category</h2>
+                </div><!-- .title -->
+                <div class="item_wrap">
+
+                    <div class="item">
+                        <div class="image">
+                            <a href=""><img src="img/240510_연출컷_01.jpg" alt=""></a>
+                        </div><!-- .image -->
+                        <div class="text">
+                            <strong>대용량 400g</strong>
+                            <img src="img/slide_arrow.svg" alt="">
+                        </div><!-- .text -->
+                    </div><!-- .item -->
+
+                    <div class="item">
+                        <div class="image">
+                            <a href=""><img src="img/240510_연출컷_02.jpg" alt=""></a>
+                        </div><!-- .image -->
+                        <div class="text">
+                            <strong>파우치 BOX</strong>
+                            <img src="img/slide_arrow.svg" alt="">
+                        </div><!-- .text -->
+                    </div><!-- .item -->
+
+                    <div class="item">
+                        <div class="image">
+                            <a href=""><img src="img/240510_연출컷_03.jpg" alt=""></a>
+                        </div><!-- .image -->
+                        <div class="text">
+                            <strong>파우치 단품</strong>
+                            <img src="img/slide_arrow.svg" alt="">
+                        </div><!-- .text -->
+                    </div><!-- .item -->
+
+                    <div class="item">
+                        <div class="image">
+                            <a href=""><img src="img/240510_연출컷_04.jpg" alt=""></a>
+                        </div><!-- .image -->
+                        <div class="text">
+                            <strong>BPA FREE 보틀</strong>
+                            <img src="img/slide_arrow.svg" alt="">
+                        </div><!-- .text -->
+                    </div><!-- .item -->
+
+                </div><!-- .item_Wrap -->
+
+                <div class="text_slide">
+                    <p>A Journey to Uncover My Shining Self</p>
+                </div><!-- .text_slide -->
+
+            </div><!-- .inner -->
+        </section><!-- .seciotn_01 end -->
+
+        <section class="section_02">
+            <div class="inner">
+                <div class="item_wrap">
+
+                    <!-- 첫 번째 블록 -->
+                    <div class="item">
+                        <div class="image_wrap">
+                            <img src="img/70862781063069947_654239072.jpg" alt="">
+                            <img src="img/87933702441940356_170618260.jpg" alt="">
+                        </div><!-- .image_wrap -->
+                        <div class="text_wrap">
+                            <h3>프로티원 story</h3>
+                            <p>
+                                프로티원은 더 건강하고 맛있는<br>단백질 식품을 만들고 제안합니다.<br>
+                                프로티원과 함께 '진정한 나'를 발견하는<br>자유분방하고 익사이팅한 여정에 함께하세요.
+                            </p>
+                            <button type="button" class="sec2_btn"><a href="#">view more</a></button>
+                        </div><!-- .text_wrap -->
+                    </div><!-- .item -->
+
+                    <!-- 두 번째 블록 -->
+                    <div class="item">
+                        <div class="image_wrap">
+                            <img src="img/67452409223710868_251162136.jpg" alt="">
+                            <img src="img/70862721872710052_1378095474.jpg" alt="">
+                        </div><!-- .image_wrap -->
+                        <div class="text_wrap">
+                            <h3>프로티원 story</h3>
+                            <p>
+                                프로티원은 더 건강하고 맛있는<br>단백질 식품을 만들고 제안합니다.<br>
+                                프로티원과 함께 '진정한 나'를 발견하는<br>자유분방하고 익사이팅한 여정에 함께하세요.
+                            </p>
+                            <button type="button" class="sec2_btn"><a href="#">view more</a></button>
+                        </div><!-- .text_wrap -->
+                    </div><!-- .item -->
+
+                </div><!-- .item_wrap -->
+            </div><!-- .inner -->
+        </section><!-- .section_02 end -->
+
+        <section class="section_03">
+            <div class="inner">
+
+            </div><!-- .inner -->
+        </section><!-- .section_03 end -->
+
+    </id><!-- .wrap end -->
+</body>
+
+</html>

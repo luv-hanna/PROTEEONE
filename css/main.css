@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('PROTEEONE/font/Pretendard/Pretendard-Thin.woff2') format('woff2'),
+        url('PROTEEONE/font/Pretendard/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.inner {
+    max-width: 1760px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 40px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    position: relative;
+
+    z-index: 999;
+}
+
+.banner p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.banner .link_close {
+
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+}
+
+.banner .link_close img {
+    width: 12px;
+    height: 12px;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.header .inner .logo {
+    width: 250px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .inner .logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header .inner .nav .gnb {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.header .inner .nav .gnb>li {
+    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(200%) hue-rotate(0deg) brightness(80%) contrast(110%);
+}
+
+.header .inner .nav .gnb {
+    font-family: 'Pretendard-Medium';
+    font-weight: 500;
+    color: #111111;
+}
+
+.main .main_visual {
+    margin: -80px 0 auto;
+    position: relative;
+}
+
+.main_visual .swiper-slide {
+    height: 110vh;
+}
+
+.main .main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .main_visual .text {
+    font-family: 'Pretendard-Regular';
+    width: 100%;
+
+    position: absolute;
+    top: 35%;
+    left: 100px;
+
+    transform: translateY(-50%);
+
+    color: #fff;
+}
+
+.section_01 {
+    margin-top: 150px;
+}
+
+.section_01 .inner .text_slide {
+    padding: 150px 0;
+    font-size: 10.625rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.section_01 .inner .text_slide p {
+
+    animation-name: textslide;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+
+    /*alternate : 정방향 => 역방향으로 왔다 갔다
+    reverse : 역방향으로 가는 것
+    alternate-reverse : 역방향 => 정방항으로 왔다 갔따 */
+    animation-direction: alternate;
+
+    /* 흘러가는 속도 조절 :linear 일정한 속도 유지
+    ease
+    ease-in
+    ease-out
+    ease-in-out
+    linear */
+    animation-timing-function: linear;
+}
+
+@keyframes textslide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+.section_01 .title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section_01 .title h2 {
+    font-family: 'Pretendard-Black';
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.section_01 .item_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.section_01 .item_wrap .item {}
+
+.section_01 .item_wrap .item .image {
+    width: 410px;
+    height: 650px;
+    margin-bottom: 1.25rem;
+}
+
+.section_01 .item_wrap .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_01 .item_wrap .item .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.section_01 .item_wrap .item .text img {
+    width: 14px;
+    height: 14px;
+}
+
+.section_01 .item_wrap .item .text strong {
+    font-family: 'Pretendard-Regular';
+}
+
+.section_01 .inner .text_slide p {
+    font-family: 'Pretendard-ExtraBold';
+    font-weight: bold;
+}
+
+.section_02 {
+    margin-top: 150px;
+}
+
+.section_02 .inner {
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+.section_02 .item_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.section_02 .item_wrap .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.section_02 .item:nth-child(2) {
+    flex-direction: row-reverse; /* 두 번째 아이템은 반대로 */
+}
+
+.image_wrap {
+    flex: 1;
+    display: flex;
+    gap: 40px;
+}
+
+.image_wrap img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.text_wrap h3 {
+    font-family: 'Pretendard-Black';
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 50px;
+    letter-spacing: -0.04em;
+}
+
+.text_wrap p {
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    margin-bottom: 100px;
+    letter-spacing: -0.04em;
+}
+
+.sec2_btn {
+    width: 220px;
+    height: 65px;
+    border: 2px solid #111111;
+    border-radius: 50px;
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 20px;
+    background: none;
+    cursor: pointer;
+}
+
+.sec2_btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 65px;
+    text-align: center;
+    color: #111;
+    text-decoration: none;
+}
